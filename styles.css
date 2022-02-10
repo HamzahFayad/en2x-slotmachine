@@ -112,6 +112,11 @@ body {
   height: auto;
   margin-top: 21px;
 }
+@media only screen and (max-width: 375px) {
+  .machine .column {
+    overflow: visible;
+  }
+}
 @media only screen and (max-width: 320px) {
   .machine .column {
     transform: scale(0.75);

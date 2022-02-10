@@ -108,6 +108,9 @@ body {
     width: 100%;
     height: auto;
     margin-top: $gutter * 0.75;
+    @media only screen and (max-width: 375px) {
+      overflow: visible;
+    }
     @media only screen and (max-width: 320px) {
       transform: scale(0.75);
     }
