@@ -107,6 +107,7 @@ body {
 }
 .machine .column {
   display: inline-block;
+  overflow: hidden;
   width: 100%;
   height: auto;
   margin-top: 21px;
