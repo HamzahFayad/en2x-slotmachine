@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="graustufe_x5F_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#626B72;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#626B72;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#626B72;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#626B72;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1,4;}
+</style>
+<g>
+	<path class="st0" d="M41.2,34.55H8.8c-0.83,0-1.51,0.68-1.51,1.51v2.2h35.42v-2.2C42.71,35.23,42.03,34.55,41.2,34.55z"/>
+	<path class="st1" d="M39.02,11.73h0.51c0.37,0,0.67,0.3,0.67,0.67v21.97h-5.51V12.4c0-0.37,0.3-0.67,0.67-0.67h2.12"/>
+	<polyline class="st2" points="34.44,23.74 28.32,18.68 28.32,23.3 22.53,18.69 22.53,23.3 16.74,18.69 16.74,23.3 10.89,18.69 
+		10.89,34.37 	"/>
+	<line class="st2" x1="40.09" y1="16.9" x2="34.88" y2="16.9"/>
+	<g>
+		<line class="st3" x1="14.11" y1="26.52" x2="31.77" y2="26.52"/>
+	</g>
+	<g>
+		<line class="st3" x1="14.11" y1="29.83" x2="31.77" y2="29.83"/>
+	</g>
+</g>
+</svg>

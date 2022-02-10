@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&family=Montserrat:wght@400;500&family=Rubik:wght@300;400&display=swap");
+.slotMachineNoTransition {
+  transition: none !important;
+}
+
+.slotMachineBlurFast {
+  filter: blur(5px);
+}
+
+.slotMachineBlurMedium {
+  filter: blur(3px);
+}
+
+.slotMachineBlurSlow {
+  filter: blur(2px);
+}
+
+.slotMachineBlurTurtle {
+  filter: blur(1px);
+}
+
+:root {
+  --transp: scaleX(0);
+}
+
+body {
+  margin: 0 auto;
+}
+
+.machine {
+  padding: 84px 0;
+  background: #fff;
+  margin: 0 auto;
+  font-family: "Rubik";
+}
+@media only screen and (min-width: 1px) {
+  .machine {
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 399px) {
+  .machine {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 499px) {
+  .machine {
+    width: 70vw;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .machine {
+    width: 50vw;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .machine {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .machine {
+    max-width: 400px;
+  }
+}
+.machine .wrap {
+  padding: 2% 0;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: row nowrap;
+  justify-content: center;
+  text-align: center;
+  transition: all 450ms ease-in-out;
+  border: none;
+}
+@media only screen and (max-width: 1114px) {
+  .machine .wrap {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .machine .wrap {
+    max-width: 100vw;
+  }
+}
+.machine .wrap::before {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+  content: "";
+  border-top: 2px solid #db1976;
+  transform: var(--transp);
+  transition: transform 600ms ease-in-out;
+}
+.machine .wrap::after {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  content: "";
+  border-bottom: 2px solid #1796c2;
+  transform: var(--transp);
+  transition: transform 600ms ease-in-out;
+}
+.machine .column {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-top: 21px;
+}
+@media only screen and (max-width: 320px) {
+  .machine .column {
+    transform: scale(0.75);
+  }
+}
+.machine .row {
+  clear: both;
+}
+.machine .optionContainer,
+.machine .option {
+  height: 140px;
+}
+.machine .optionContainer {
+  color: #000;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 auto 14px;
+}
+.machine .option {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+.machine .option div {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.machine .option div img,
+.machine .option div svg {
+  max-width: 100px;
+  transform: scale(1.2);
+}
+.machine .option div span {
+  font-size: 18px;
+  color: #2b2765;
+  padding: 4px 0;
+}
+.machine .mashupButton {
+  position: relative;
+  text-align: center;
+  margin-top: 10%;
+}
+@media only screen and (max-width: 599px) {
+  .machine .mashupButton {
+    transform: scale(0.8);
+  }
+}
+.machine .mashupButton .button {
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  background: #2b2765;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.machine .mashupButton .button:hover {
+  opacity: 0.9;
+}
+
+svg .st0 {
+  fill: none;
+  stroke: #2b2765;
+  stroke-miterlimit: 10;
+}
+svg .st1 {
+  fill: none;
+  stroke: #2b2765;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+svg .st2 {
+  fill: none;
+  stroke: #2b2765;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+svg .st3 {
+  fill: none;
+  stroke: #2b2765;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1, 4;
+}
+
+/*.icon2 {
+  display: inline-block;
+  @media only screen and (max-width: 1114px) {
+    display: block;
+  }
+  div {
+    transform: scale(3) translateY(-40px);
+    @media only screen and (max-width: 1114px) {
+      transform: scale(3) translateY(0px);
+    }
+  }
+}
+*/
+.icon2 {
+  display: inline-block;
+  max-width: 80px;
+  max-height: 120px;
+}
+.icon2 span img {
+  max-width: 200px;
+}
+
+.disabledBtn {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
