@@ -35,35 +35,37 @@ body {
 }
 @media only screen and (min-width: 1px) {
   .machine {
-    width: 100vw;
+    width: 95vw;
   }
 }
 @media only screen and (min-width: 399px) {
   .machine {
-    width: 90vw;
+    width: 80vw;
   }
 }
 @media only screen and (min-width: 499px) {
   .machine {
-    width: 70vw;
+    width: 65vw;
   }
 }
 @media only screen and (min-width: 750px) {
   .machine {
-    width: 50vw;
+    width: 45vw;
   }
 }
 @media only screen and (min-width: 900px) {
   .machine {
-    width: 40vw;
+    width: 35vw;
   }
 }
 @media only screen and (min-width: 1024px) {
   .machine {
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 .machine .wrap {
+  width: 100%;
+  max-width: calc(100% - 10px);
   padding: 2% 0;
   position: relative;
   margin: 0 auto;
@@ -74,15 +76,13 @@ body {
   text-align: center;
   transition: all 450ms ease-in-out;
   border: none;
+  /*@media only screen and (max-width: 320px) {
+    max-width: 100vw;
+  }*/
 }
 @media only screen and (max-width: 1114px) {
   .machine .wrap {
     align-items: center;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .machine .wrap {
-    max-width: 100vw;
   }
 }
 .machine .wrap::before {
@@ -152,7 +152,7 @@ body {
 .machine .option div img,
 .machine .option div svg {
   max-width: 100px;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 .machine .option div span {
   font-size: 18px;
