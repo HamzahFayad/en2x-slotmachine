@@ -98,6 +98,9 @@ body {
   transform: var(--transp);
   transition: transform 600ms ease-in-out;
 }
+.machine .col1 {
+  padding-left: 20px;
+}
 .machine .column {
   display: inline-block;
   overflow: hidden;
