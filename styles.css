@@ -30,6 +30,7 @@ body {
 
 .machine {
   width: 100vw;
+  padding: 5% 0;
   background: #fff;
   margin: 0 auto;
   font-family: "Rubik";
