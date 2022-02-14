@@ -67,7 +67,7 @@ $(document).ready(function () {
   //on button click functionality
   $("#randomizeButton").click(function () {
     xlogo.style.transform = "scale(0.7)";
-    document.querySelector(".col1").style.paddingLeft = "0px";
+    //document.querySelector(".col1").style.paddingLeft = "0px";
     document.querySelector("#randomizeButton").classList.add("disabledBtn");
     document.documentElement.style.setProperty("--transp", "scaleX(1)");
     // random from 1 to 4 (4 categories)

@@ -79,10 +79,12 @@ body {
     @media only screen and (max-width: 1114px) {
       align-items: center;
     }
-    @media screen and (min-width: 900px) {
+    @media only screen and (min-width: 900px) {
       transform: scale(1.4);
     }
-
+    @media only screen and (min-width: 375px) {
+      padding-left: 20px;
+    }
     /*@media only screen and (max-width: 320px) {
       max-width: 100vw;
     }*/
@@ -107,9 +109,10 @@ body {
       transition: transform 600ms ease-in-out;
     }
   }
-  .col1 {
-    padding-left: 20px;
-  }
+  /*.col1 {
+    //padding-left: 20px;
+    //transition: all 800ms ease;
+  }*/
   .column {
     display: inline-block;
     //padding: 0 2%;

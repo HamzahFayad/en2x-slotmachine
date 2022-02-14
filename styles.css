@@ -52,6 +52,10 @@ body {
   @media only screen and(min-width: 1024px) {
     max-width: 350px;
   }*/
+  /*.col1 {
+    //padding-left: 20px;
+    //transition: all 800ms ease;
+  }*/
 }
 .machine .wrap {
   width: 300px;
@@ -73,9 +77,14 @@ body {
     align-items: center;
   }
 }
-@media screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   .machine .wrap {
     transform: scale(1.4);
+  }
+}
+@media only screen and (min-width: 375px) {
+  .machine .wrap {
+    padding-left: 20px;
   }
 }
 .machine .wrap::before {
@@ -97,9 +106,6 @@ body {
   border-bottom: 2px solid #1796c2;
   transform: var(--transp);
   transition: transform 600ms ease-in-out;
-}
-.machine .col1 {
-  padding-left: 20px;
 }
 .machine .column {
   display: inline-block;
