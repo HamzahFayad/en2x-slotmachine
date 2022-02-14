@@ -68,6 +68,7 @@ body {
   text-align: center;
   transition: all 450ms ease-in-out;
   border: none;
+  padding-left: 20px;
   /*@media only screen and (max-width: 320px) {
     max-width: 100vw;
   }*/
@@ -80,11 +81,6 @@ body {
 @media only screen and (min-width: 900px) {
   .machine .wrap {
     transform: scale(1.4);
-  }
-}
-@media only screen and (min-width: 375px) {
-  .machine .wrap {
-    padding-left: 20px;
   }
 }
 .machine .wrap::before {
