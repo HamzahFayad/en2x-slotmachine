@@ -23,53 +23,41 @@
   --transp: scaleX(0);
 }
 
-/*body {
+html,
+body {
   margin: 0 auto;
-}*/
+}
+
 .machine {
-  padding: 84px 0;
+  width: 100vw;
   background: #fff;
   margin: 0 auto;
   font-family: "Rubik";
-}
-@media only screen and (min-width: 1px) {
-  .machine {
+  /*@media only screen and(min-width: 1px) {
     width: 95vw;
   }
-}
-@media only screen and (min-width: 399px) {
-  .machine {
+  @media only screen and(min-width: 399px) {
     width: 87vw;
   }
-}
-@media only screen and (min-width: 499px) {
-  .machine {
+  @media only screen and(min-width: 499px) {
     width: 70vw;
   }
-}
-@media only screen and (min-width: 750px) {
-  .machine {
+  @media only screen and(min-width: 750px) {
     width: 48vw;
   }
-}
-@media only screen and (min-width: 900px) {
-  .machine {
+  @media only screen and(min-width: 900px) {
     width: 40vw;
   }
-}
-@media only screen and (min-width: 1024px) {
-  .machine {
+  @media only screen and(min-width: 1024px) {
     max-width: 350px;
-  }
+  }*/
 }
 .machine .wrap {
-  width: 100%;
-  max-width: calc(100% - 10px);
-  padding: 2% 0;
+  width: 300px;
   position: relative;
   margin: 0 auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-flow: row nowrap;
   justify-content: center;
   text-align: center;
@@ -82,6 +70,11 @@
 @media only screen and (max-width: 1114px) {
   .machine .wrap {
     align-items: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .machine .wrap {
+    transform: scale(1.4);
   }
 }
 .machine .wrap::before {
@@ -107,18 +100,12 @@
 .machine .column {
   display: inline-block;
   overflow: hidden;
-  width: 100%;
+  width: 180px;
   height: auto;
-  margin-top: 21px;
 }
 @media only screen and (max-width: 375px) {
   .machine .column {
     overflow: visible;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .machine .column {
-    transform: scale(0.75);
   }
 }
 .machine .row {
@@ -129,10 +116,7 @@
   height: 140px;
 }
 .machine .optionContainer {
-  color: #000;
-  background: #fff;
-  border-radius: 5px;
-  margin: 0 auto 14px;
+  background: #f2f3f3;
 }
 .machine .option {
   box-sizing: border-box;
@@ -153,15 +137,15 @@
   max-width: 100px;
   transform: scale(1);
 }
-.machine .option div span {
-  font-size: 16px;
+.machine .option p {
+  font-size: 0.7rem;
   color: #2b2765;
-  padding: 4px 0;
+  text-transform: uppercase;
 }
 .machine .mashupButton {
   position: relative;
   text-align: center;
-  margin-top: 8%;
+  margin-top: 3%;
 }
 @media only screen and (max-width: 599px) {
   .machine .mashupButton {
@@ -170,10 +154,10 @@
 }
 .machine .mashupButton .button {
   display: inline-block;
-  font-size: 32px;
+  font-size: 24px;
   border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   background: #2b2765;
   color: white;
   border: none;

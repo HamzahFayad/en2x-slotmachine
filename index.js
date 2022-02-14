@@ -24,6 +24,7 @@ $(document).ready(function () {
     },
   });
 
+  let xlogo = document.querySelector(".x--logo");
   let wrap = document.querySelector(".wrap");
 
   //SVG change color functionality
@@ -65,6 +66,7 @@ $(document).ready(function () {
 
   //on button click functionality
   $("#randomizeButton").click(function () {
+    xlogo.style.transform = "scale(0.7)";
     document.querySelector("#randomizeButton").classList.add("disabledBtn");
     document.documentElement.style.setProperty("--transp", "scaleX(1)");
     // random from 1 to 4 (4 categories)
@@ -81,7 +83,8 @@ $(document).ready(function () {
     } else if (count === 3) {
       //alles
       setTimeout(coloring("#DB1976"), 500);
-      count2 = Math.floor(Math.random() * 7) + 1;
+      let arrStrom = [3, 4, 5, 6, 7];
+      count2 = arrStrom[Math.floor(Math.random() * arrStrom.length)];
     } else if (count === 4) {
       //nur Industrie
       setTimeout(coloring("#626B72"), 500);
