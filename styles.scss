@@ -45,16 +45,16 @@ $color-primary-black: #000;
     width: 95vw;
   }
   @media only screen and(min-width: 399px) {
-    width: 80vw;
+    width: 87vw;
   }
   @media only screen and(min-width: 499px) {
-    width: 65vw;
+    width: 70vw;
   }
   @media only screen and(min-width: 750px) {
-    width: 45vw;
+    width: 48vw;
   }
   @media only screen and(min-width: 900px) {
-    width: 35vw;
+    width: 40vw;
   }
   @media only screen and(min-width: 1024px) {
     max-width: 350px;
@@ -138,7 +138,7 @@ $color-primary-black: #000;
     div {
       display: inline-block;
       position: relative;
-      top: 50%;
+      top: 51%;
       transform: translateY(-50%);
       display: flex;
       flex-flow: column wrap;
@@ -149,7 +149,7 @@ $color-primary-black: #000;
         transform: scale(1);
       }
       span {
-        font-size: 18px;
+        font-size: 16px;
         color: #2b2765;
         padding: 4px 0;
       }
