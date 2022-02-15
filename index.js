@@ -6,7 +6,7 @@ $(document).ready(function () {
   var machine1 = $("#machine1").slotMachine({
     active: 0,
     direction: "up",
-    delay: 500,
+    delay: 600,
     transition: "cubic-bezier(0.64, 0.57, 0.67, 1.53)",
     randomize() {
       return count;
@@ -17,7 +17,7 @@ $(document).ready(function () {
   var machine2 = $("#machine2").slotMachine({
     active: 0,
     direction: "up",
-    delay: 500,
+    delay: 600,
     transition: "cubic-bezier(0.64, 0.57, 0.67, 1.53)",
     randomize() {
       return count2;
