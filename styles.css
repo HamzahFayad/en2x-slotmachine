@@ -57,6 +57,11 @@ body {
     //transition: all 800ms ease;
   }*/
 }
+.machine #slotmachine {
+  background: #f2f3f3;
+  display: flex;
+  padding: 12% 0;
+}
 .machine .wrap {
   width: 300px;
   position: relative;
@@ -152,7 +157,7 @@ body {
 }
 .machine .option p {
   font-size: 0.6rem;
-  color: #2b2765;
+  color: #250f51;
   text-transform: uppercase;
 }
 .machine .mashupButton {
@@ -171,7 +176,7 @@ body {
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
-  background: #2b2765;
+  background: #250f51;
   color: white;
   border: none;
   cursor: pointer;
