@@ -34,6 +34,7 @@ $(document).ready(function () {
   let strokes2 = document.querySelectorAll(".st2");
   let strokes3 = document.querySelectorAll(".st3");
 
+  // change icons color based on count return
   function coloring(color) {
     if (strokes0) {
       for (let i = 0; i < strokes0.length; i++) {
@@ -57,9 +58,16 @@ $(document).ready(function () {
     }
   }
 
+  var orderIndex = 0;
+  var order = [1, 2, 3, 4, 2, 1, 3];
+  //return categories by order of array "order" + repeat
+  function getCategory() {
+    orderIndex %= order.length;
+    return order[orderIndex];
+  }
+
   //on complete callback function
   function onComplete() {
-    console.log("done");
     document.documentElement.style.setProperty("--transp", "scaleX(0)");
     document.querySelector("#randomizeButton").classList.remove("disabledBtn");
   }
@@ -71,23 +79,25 @@ $(document).ready(function () {
     document.querySelector("#randomizeButton").classList.add("disabledBtn");
     document.documentElement.style.setProperty("--transp", "scaleX(1)");
     // random from 1 to 4 (4 categories)
-    count = Math.floor(Math.random() * 4) + 1;
+    //count = Math.floor(Math.random() * 4) + 1;
+    count = getCategory();
+    orderIndex++;
 
     if (count === 1) {
-      //alles
+      //all
       setTimeout(coloring("#1796C2"), 500);
       count2 = Math.floor(Math.random() * 7) + 1;
     } else if (count === 2) {
-      //alles außer Industrie
+      //all except industry
       setTimeout(coloring("#02893E"), 500);
       count2 = Math.floor(Math.random() * 6) + 1;
     } else if (count === 3) {
-      //alles
+      //all except plane & ship
       setTimeout(coloring("#DB1976"), 500);
       let arrStrom = [3, 4, 5, 6, 7];
       count2 = arrStrom[Math.floor(Math.random() * arrStrom.length)];
     } else if (count === 4) {
-      //nur Industrie
+      //only industry
       setTimeout(coloring("#626B72"), 500);
       count2 = 7;
     }
