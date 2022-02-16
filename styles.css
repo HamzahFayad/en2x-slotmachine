@@ -59,8 +59,7 @@ body {
 }
 .machine #slotmachine {
   background: #f2f3f3;
-  display: flex;
-  padding: 12% 0;
+  padding: 6% 0;
 }
 .machine .wrap {
   width: 300px;
@@ -159,11 +158,12 @@ body {
   font-size: 0.6rem;
   color: #250f51;
   text-transform: uppercase;
+  margin: 0;
 }
 .machine .mashupButton {
   position: relative;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 @media only screen and (max-width: 599px) {
   .machine .mashupButton {
