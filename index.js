@@ -91,13 +91,13 @@ $(document).ready(function () {
     //setTimeout(() => coloring("#2b2765"), 150);
 
     document.querySelectorAll(".svg01 .st0").forEach((el) => {
-      el.style.stroke = "#1796C2";
+      el.style.stroke = "#DB1976";
     });
     document.querySelectorAll(".svg01 .st1").forEach((el) => {
-      el.style.stroke = "#1796C2";
+      el.style.stroke = "#DB1976";
     });
     document.querySelectorAll(".svg01 .st2").forEach((el) => {
-      el.style.stroke = "#1796C2";
+      el.style.stroke = "#DB1976";
     });
     //++++++++++++//
     document.querySelectorAll(".svg02 .st0").forEach((el) => {
