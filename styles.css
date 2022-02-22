@@ -96,6 +96,7 @@ body {
   border-top: 2px solid #db1976;
   transform: var(--transp);
   transition: transform 600ms ease-in-out;
+  z-index: 99;
 }
 .machine .wrap::after {
   width: 100%;
@@ -106,6 +107,7 @@ body {
   border-bottom: 2px solid #1796c2;
   transform: var(--transp);
   transition: transform 600ms ease-in-out;
+  z-index: 99;
 }
 .machine .column {
   display: inline-block;
@@ -189,12 +191,14 @@ svg .st0 {
   fill: none;
   stroke: #2b2765;
   stroke-miterlimit: 10;
+  transition: all 200ms;
 }
 svg .st1 {
   fill: none;
   stroke: #2b2765;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
+  transition: all 200ms;
 }
 svg .st2 {
   fill: none;
@@ -202,6 +206,7 @@ svg .st2 {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
+  transition: all 200ms;
 }
 svg .st3 {
   fill: none;
@@ -210,6 +215,7 @@ svg .st3 {
   stroke-linejoin: round;
   stroke-miterlimit: 10;
   stroke-dasharray: 1, 4;
+  transition: all 200ms;
 }
 
 /*.icon2 {

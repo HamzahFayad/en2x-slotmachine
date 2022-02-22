@@ -68,16 +68,97 @@ $(document).ready(function () {
 
   //on complete callback function
   function onComplete() {
-    document.documentElement.style.setProperty("--transp", "scaleX(0)");
+    //document.documentElement.style.setProperty("--transp", "scaleX(0)");
     document.querySelector("#randomizeButton").classList.remove("disabledBtn");
+
+    //color icon based on result
+    if (count === 1) {
+      coloring("#1796C2");
+    } else if (count === 2) {
+      coloring("#02893E");
+    } else if (count === 3) {
+      coloring("#DB1976");
+    } else if (count === 4) {
+      coloring("#626B72");
+    }
   }
 
+  var timesClicked = 0;
   //on button click functionality
   $("#randomizeButton").click(function () {
+    timesClicked++;
+    //color to default
+    //setTimeout(() => coloring("#2b2765"), 150);
+
+    document.querySelectorAll(".svg01 .st0").forEach((el) => {
+      el.style.stroke = "#1796C2";
+    });
+    document.querySelectorAll(".svg01 .st1").forEach((el) => {
+      el.style.stroke = "#1796C2";
+    });
+    document.querySelectorAll(".svg01 .st2").forEach((el) => {
+      el.style.stroke = "#1796C2";
+    });
+    //++++++++++++//
+    document.querySelectorAll(".svg02 .st0").forEach((el) => {
+      el.style.stroke = "#02893E";
+    });
+    document.querySelectorAll(".svg02 .st1").forEach((el) => {
+      el.style.stroke = "#02893E";
+    });
+
+    //++++++++++//
+    document.querySelectorAll(".svg04 .st0").forEach((el) => {
+      el.style.stroke = "#DB1976";
+    });
+    document.querySelectorAll(".svg04 .st1").forEach((el) => {
+      el.style.stroke = "#DB1976";
+    });
+    document.querySelectorAll(".svg04 .st2").forEach((el) => {
+      el.style.stroke = "#DB1976";
+    });
+    //++++++++++//
+    document.querySelectorAll(".svg05 .st0").forEach((el) => {
+      el.style.stroke = "#1796C2";
+    });
+    document.querySelectorAll(".svg05 .st1").forEach((el) => {
+      el.style.stroke = "#1796C2";
+    });
+
+    //++++++++++//
+    document.querySelectorAll(".svg06 .st0").forEach((el) => {
+      el.style.stroke = "#02893E";
+    });
+
+    //++++++++++//
+    document.querySelectorAll(".svg07 .st0").forEach((el) => {
+      el.style.stroke = "#626B72";
+    });
+    document.querySelectorAll(".svg07 .st1").forEach((el) => {
+      el.style.stroke = "#626B72";
+    });
+    document.querySelectorAll(".svg07 .st2").forEach((el) => {
+      el.style.stroke = "#626B72";
+    });
+    document.querySelectorAll(".svg07 .st3").forEach((el) => {
+      el.style.stroke = "#626B72";
+    });
+
     xlogo.style.transform = "scale(0.7)";
     document.querySelector(".wrap").style.paddingLeft = "0px";
     document.querySelector("#randomizeButton").classList.add("disabledBtn");
     document.documentElement.style.setProperty("--transp", "scaleX(1)");
+
+    if (timesClicked > 1) {
+      setTimeout(
+        () =>
+          document.documentElement.style.setProperty("--transp", "scaleX(0)"),
+        250
+      );
+      setTimeout(() => {
+        document.documentElement.style.setProperty("--transp", "scaleX(1)");
+      }, 1000);
+    }
     // random from 1 to 4 (4 categories)
     //count = Math.floor(Math.random() * 4) + 1;
     count = getCategory();
@@ -85,20 +166,20 @@ $(document).ready(function () {
 
     if (count === 1) {
       //all
-      setTimeout(coloring("#1796C2"), 500);
+      //setTimeout(coloring("#1796C2"), 500);
       count2 = Math.floor(Math.random() * 7) + 1;
     } else if (count === 2) {
       //all except industry
-      setTimeout(coloring("#02893E"), 500);
+      //setTimeout(coloring("#02893E"), 500);
       count2 = Math.floor(Math.random() * 6) + 1;
     } else if (count === 3) {
       //all except plane & ship
-      setTimeout(coloring("#DB1976"), 500);
+      //setTimeout(coloring("#DB1976"), 500);
       let arrStrom = [3, 4, 5, 6, 7];
       count2 = arrStrom[Math.floor(Math.random() * arrStrom.length)];
     } else if (count === 4) {
       //only industry
-      setTimeout(coloring("#626B72"), 500);
+      //setTimeout(coloring("#626B72"), 500);
       count2 = 7;
     }
 
