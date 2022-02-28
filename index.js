@@ -72,7 +72,7 @@ $(document).ready(function () {
     document.querySelector("#randomizeButton").classList.remove("disabledBtn");
 
     //color icon based on result
-    if (count === 1) {
+    /*if (count === 1) {
       coloring("#1796C2");
     } else if (count === 2) {
       coloring("#02893E");
@@ -80,7 +80,13 @@ $(document).ready(function () {
       coloring("#DB1976");
     } else if (count === 4) {
       coloring("#626B72");
-    }
+    }*/
+  }
+
+  function newColors(el, col) {
+    document.querySelectorAll(el).forEach((e) => {
+      e.style.stroke = col;
+    });
   }
 
   var timesClicked = 0;
@@ -90,59 +96,34 @@ $(document).ready(function () {
     //color to default
     //setTimeout(() => coloring("#2b2765"), 150);
 
-    document.querySelectorAll(".svg01 .st0").forEach((el) => {
-      el.style.stroke = "#DB1976";
-    });
-    document.querySelectorAll(".svg01 .st1").forEach((el) => {
-      el.style.stroke = "#DB1976";
-    });
-    document.querySelectorAll(".svg01 .st2").forEach((el) => {
-      el.style.stroke = "#DB1976";
-    });
+    newColors(".svg01 .st0", "#DB1976");
+    newColors(".svg01 .st1", "#DB1976");
+    newColors(".svg01 .st2", "#DB1976");
+
     //++++++++++++//
-    document.querySelectorAll(".svg02 .st0").forEach((el) => {
-      el.style.stroke = "#02893E";
-    });
-    document.querySelectorAll(".svg02 .st1").forEach((el) => {
-      el.style.stroke = "#02893E";
-    });
+    newColors(".svg02 .st0", "#02893E");
+    newColors(".svg02 .st1", "#02893E");
+
+    //++++++++++++//
+    newColors(".svg03 .st0", "#1796C2");
 
     //++++++++++//
-    document.querySelectorAll(".svg04 .st0").forEach((el) => {
-      el.style.stroke = "#DB1976";
-    });
-    document.querySelectorAll(".svg04 .st1").forEach((el) => {
-      el.style.stroke = "#DB1976";
-    });
-    document.querySelectorAll(".svg04 .st2").forEach((el) => {
-      el.style.stroke = "#DB1976";
-    });
-    //++++++++++//
-    document.querySelectorAll(".svg05 .st0").forEach((el) => {
-      el.style.stroke = "#1796C2";
-    });
-    document.querySelectorAll(".svg05 .st1").forEach((el) => {
-      el.style.stroke = "#1796C2";
-    });
+    newColors(".svg04 .st0", "#DB1976");
+    newColors(".svg04 .st1", "#DB1976");
+    newColors(".svg04 .st2", "#DB1976");
 
     //++++++++++//
-    document.querySelectorAll(".svg06 .st0").forEach((el) => {
-      el.style.stroke = "#02893E";
-    });
+    newColors(".svg05 .st0", "#1796C2");
+    newColors(".svg05 .st1", "#1796C2");
 
     //++++++++++//
-    document.querySelectorAll(".svg07 .st0").forEach((el) => {
-      el.style.stroke = "#626B72";
-    });
-    document.querySelectorAll(".svg07 .st1").forEach((el) => {
-      el.style.stroke = "#626B72";
-    });
-    document.querySelectorAll(".svg07 .st2").forEach((el) => {
-      el.style.stroke = "#626B72";
-    });
-    document.querySelectorAll(".svg07 .st3").forEach((el) => {
-      el.style.stroke = "#626B72";
-    });
+    newColors(".svg06 .st0", "#02893E");
+
+    //++++++++++//
+    newColors(".svg07 .st0", "#626B72");
+    newColors(".svg07 .st1", "#626B72");
+    newColors(".svg07 .st2", "#626B72");
+    newColors(".svg07 .st3", "#626B72");
 
     xlogo.style.transform = "scale(0.7)";
     document.querySelector(".wrap").style.paddingLeft = "0px";
@@ -166,20 +147,20 @@ $(document).ready(function () {
 
     if (count === 1) {
       //all
-      //setTimeout(coloring("#1796C2"), 500);
+      setTimeout(() => coloring("#1796C2"), 2800);
       count2 = Math.floor(Math.random() * 7) + 1;
     } else if (count === 2) {
       //all except industry
-      //setTimeout(coloring("#02893E"), 500);
+      setTimeout(() => coloring("#02893E"), 2800);
       count2 = Math.floor(Math.random() * 6) + 1;
     } else if (count === 3) {
       //all except plane & ship
-      //setTimeout(coloring("#DB1976"), 500);
+      setTimeout(() => coloring("#DB1976"), 2800);
       let arrStrom = [3, 4, 5, 6, 7];
       count2 = arrStrom[Math.floor(Math.random() * arrStrom.length)];
     } else if (count === 4) {
       //only industry
-      //setTimeout(coloring("#626B72"), 500);
+      setTimeout(() => coloring("#626B72"), 2800);
       count2 = 7;
     }
 
